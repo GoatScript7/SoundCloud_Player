@@ -9,7 +9,14 @@ import {
   ScrollView,
 } from "react-native";
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import { AntDesign, Ionicons, FontAwesome } from "@expo/vector-icons";
+import {
+  AntDesign,
+  Ionicons,
+  FontAwesome,
+  MaterialCommunityIcons,
+  Feather,
+  Entypo,
+} from "@expo/vector-icons";
 
 const MainPlayer = ({ item, playNextTrack, playPrevTrack, sound }) => {
   const scrollViewRef = useRef(null);
@@ -136,7 +143,7 @@ const MainPlayer = ({ item, playNextTrack, playPrevTrack, sound }) => {
               ((startIdx + 10) / item.trackWave.samples.length) *
                 (scrollViewWidth * 2),
             ],
-            outputRange: ["white", "#FF5A18"],
+            outputRange: ["white", "#FF956A"],
             extrapolate: "clamp",
           });
 
@@ -326,6 +333,29 @@ const MainPlayer = ({ item, playNextTrack, playPrevTrack, sound }) => {
           </View>
         )}
       </ScrollView>
+
+      {/* Bottom Buttons */}
+      <View style={styles.footer}>
+        <View style={styles.footerIconTextContainer}>
+          <AntDesign name="hearto" size={20} color="white" />
+          <Text style={styles.footerIconText}>{item.likes_count}</Text>
+        </View>
+        <View style={styles.footerIconTextContainer}>
+          <MaterialCommunityIcons
+            name="comment-text-outline"
+            size={20}
+            color="white"
+          />
+          <Text style={styles.footerIconText}>{item.comment_count}</Text>
+        </View>
+        <View style={styles.footerIconTextContainer}>
+          <Feather name="share-2" size={20} color="white" />
+          <Text style={styles.footerIconText}>{item.shares_count}</Text>
+        </View>
+        <View style={styles.footerIconTextContainer}>
+          <Entypo name="dots-three-vertical" size={20} color="white" />
+        </View>
+      </View>
     </View>
   );
 };
@@ -404,6 +434,22 @@ const styles = StyleSheet.create({
   progress: {
     height: 1,
     backgroundColor: "#FF5A18",
+  },
+  footer: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: 10,
+    paddingVertical: 20,
+    justifyContent: "space-around",
+  },
+  footerIconTextContainer: {
+    flexDirection: "row",
+  },
+  footerIconText: {
+    color: "white",
+    marginLeft: 5,
+    fontWeight: "500",
+    fontSize: 15,
   },
 });
 
