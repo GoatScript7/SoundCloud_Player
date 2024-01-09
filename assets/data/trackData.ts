@@ -158,7 +158,7 @@ const trackData = [
     },
     title: "MVTRIIIX - CALMNESS (slowed)",
     audio_url:
-      "https://glassbrassparde.s3.us-east-2.amazonaws.com/MVTRIIIX+-+CALMNESS+(slowed+%2B+reverb).mp3",
+      "https://glassbrassparde.s3.us-east-2.amazonaws.com/MVTRIIIX+-+CALMNESS+(Slowed+%26+Reverb).mp3",
     artwork_url:
       "https://e-cdn-images.dzcdn.net/images/artist/061c5d94f6d062671cdd665d098f027f/264x264-000000-80-0-0.jpg",
     duration: 169221,
@@ -607,7 +607,7 @@ const trackData = [
     },
     title: "2Pac - Black Cotton (Izzamuzzic Remix)",
     audio_url:
-      "https://glassbrassparde.s3.us-east-2.amazonaws.com/2Pac+-+Black+Cotton+_+Realest+Killaz+_+Dumpin+(Izzamuzzic+Remix)_0izrbaV-lkY.mp3",
+      "https://glassbrassparde.s3.us-east-2.amazonaws.com/2Pac+-+Black+Cotton++Realest+Killaz++Dumpin+(Izzamuzzic+Remix).mp3",
     artwork_url:
       "https://images.squarespace-cdn.com/content/v1/5eb2241aa4557611525919a2/1592659543855-R76ZPO4ALKMZG6GVLTAK/0002_cm.tupacsmoking_Pori.jpg",
     duration: 457796,
@@ -751,7 +751,7 @@ const trackData = [
     },
     title: "Faydee - Crazy (Robert Cristian Remix)",
     audio_url:
-      "https://glassbrassparde.s3.us-east-2.amazonaws.com/Faydee+%E2%80%93+Crazy+(Robert+Cristian+Remix).mp3",
+      "https://glassbrassparde.s3.us-east-2.amazonaws.com/Faydee+-+Crazy+(Robert+Cristian+Remix).mp3",
     artwork_url:
       "https://c.wallhere.com/photos/29/6e/science_fiction_AI_art_car_night_sports_car_cyberpunk_city_taillights-2214620.jpg!d",
     duration: 220467,
